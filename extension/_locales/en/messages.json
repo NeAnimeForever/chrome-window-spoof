@@ -1,0 +1,305 @@
+{
+  "popupSubtitle": {
+    "message": "Focus emulation control"
+  },
+  "currentTab": {
+    "message": "Current tab"
+  },
+  "noActiveTab": {
+    "message": "No active tab"
+  },
+  "globalMode": {
+    "message": "Global mode"
+  },
+  "appliesSupportedTabs": {
+    "message": "Applies to supported tabs."
+  },
+  "off": {
+    "message": "Off"
+  },
+  "normalChrome": {
+    "message": "Normal Chrome"
+  },
+  "jsModeShort": {
+    "message": "JS"
+  },
+  "jsCompatibility": {
+    "message": "Compatibility"
+  },
+  "nativeModeShort": {
+    "message": "Native"
+  },
+  "blinkCdp": {
+    "message": "Blink / CDP"
+  },
+  "normalFocusBehavior": {
+    "message": "Normal focus behavior"
+  },
+  "jsRegisteredStatus": {
+    "message": "JS compatibility script is registered"
+  },
+  "nativeAttachedStatus": {
+    "message": "$COUNT$ supported tab(s) attached to Native Blink",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "nativeWarning": {
+    "message": "Native mode uses Chrome's debugger API. Chrome may show a debugger warning, and managed devices can restrict debugger attachment."
+  },
+  "quickActions": {
+    "message": "Quick actions"
+  },
+  "nativeTabs": {
+    "message": "Native tabs"
+  },
+  "reapplyMode": {
+    "message": "Re-apply mode"
+  },
+  "openBenchmark": {
+    "message": "Open benchmark"
+  },
+  "settings": {
+    "message": "Settings"
+  },
+  "disableNow": {
+    "message": "Disable now"
+  },
+  "jsFooter": {
+    "message": "JS mode registers the tested compatibility script only while JS mode is active. Native mode never injects that script."
+  },
+  "modeChanged": {
+    "message": "Mode: $MODE$",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "NATIVE"
+      }
+    }
+  },
+  "modeReapplied": {
+    "message": "Mode re-applied"
+  },
+  "disabled": {
+    "message": "Disabled"
+  },
+  "failed": {
+    "message": "Failed"
+  },
+  "nativeConfirm": {
+    "message": "Native mode attaches Chrome's debugger API to browser tabs. Chrome may show a debugger warning. Continue?"
+  },
+  "failedReadState": {
+    "message": "Failed to read extension state"
+  },
+  "nativeDebuggerWarningTitle": {
+    "message": "Native Blink"
+  },
+  "nativeDebuggerWarning": {
+    "message": "Native Blink uses Chrome's debugger API and requires the debugger permission. The browser can show a debugger warning while a tab is attached."
+  },
+  "settingsTitle": {
+    "message": "Advanced settings"
+  },
+  "startupBehavior": {
+    "message": "Startup & behavior"
+  },
+  "defaultStartupMode": {
+    "message": "Default startup mode"
+  },
+  "defaultStartupModeDesc": {
+    "message": "Mode restored when Chrome starts, according to the startup option below."
+  },
+  "autoApplyNewTabs": {
+    "message": "Auto-apply to new tabs"
+  },
+  "autoApplyNewTabsDesc": {
+    "message": "Applies the active mode to newly created supported tabs."
+  },
+  "reloadModeChange": {
+    "message": "Reload tabs when mode changes"
+  },
+  "reloadModeChangeDesc": {
+    "message": "Recommended. Reloading is the only reliable way to remove an already injected JS spoof before switching modes."
+  },
+  "restoreStartup": {
+    "message": "Restore the selected mode on startup"
+  },
+  "restoreStartupDesc": {
+    "message": "When disabled, the extension starts in Off mode after Chrome launches."
+  },
+  "showBadge": {
+    "message": "Show toolbar badge"
+  },
+  "showBadgeDesc": {
+    "message": "Shows JS or N on the extension icon while a non-Off mode is active."
+  },
+  "nativeSection": {
+    "message": "Native Blink"
+  },
+  "nativeSectionDesc": {
+    "message": "Uses chrome.debugger with Emulation.setFocusEmulationEnabled. This changes Blink's focus emulation path instead of replacing page JavaScript APIs."
+  },
+  "nativeReapply": {
+    "message": "Re-apply Native after navigation"
+  },
+  "nativeReapplyDesc": {
+    "message": "Re-sends the Blink focus emulation command after supported tab navigation or reload."
+  },
+  "jsSection": {
+    "message": "JS Compatibility"
+  },
+  "jsSectionDesc": {
+    "message": "Uses the tested page-level compatibility spoof. It is isolated from Native mode and is never registered while Native mode is active."
+  },
+  "diagnostics": {
+    "message": "Diagnostics"
+  },
+  "currentMode": {
+    "message": "Current mode"
+  },
+  "defaultMode": {
+    "message": "Default mode"
+  },
+  "jsScript": {
+    "message": "JS script registered"
+  },
+  "nativeAttached": {
+    "message": "Native attached tabs"
+  },
+  "supportedTabs": {
+    "message": "Supported tabs"
+  },
+  "refreshDiagnostics": {
+    "message": "Refresh diagnostics"
+  },
+  "resetSettings": {
+    "message": "Reset settings"
+  },
+  "hostAccessNote": {
+    "message": "Host access is required for JS mode on supported web pages. Chrome internal pages, extension pages and DevTools are excluded by design."
+  },
+  "confirmReset": {
+    "message": "Reset all settings and disable the spoof?"
+  },
+  "failedSave": {
+    "message": "Failed to save setting"
+  },
+  "failedReapply": {
+    "message": "Failed to re-apply mode"
+  },
+  "failedChangeMode": {
+    "message": "Failed to change mode"
+  },
+  "language": {
+    "message": "Language"
+  },
+  "languageAuto": {
+    "message": "Automatic (Chrome)"
+  },
+  "languageEnglish": {
+    "message": "English"
+  },
+  "languageRussian": {
+    "message": "Русский"
+  },
+  "languageDesc": {
+    "message": "Popup and settings language. Other extension pages stay in English."
+  },
+  "helpDefaultMode": {
+    "message": "This is the mode selected automatically when startup restoration is enabled."
+  },
+  "helpNewTabs": {
+    "message": "In Native mode, new supported tabs are attached automatically. In JS mode, the registered content script applies automatically."
+  },
+  "helpReload": {
+    "message": "Turning this off can leave a page with the previous mode until it is manually reloaded."
+  },
+  "helpRestore": {
+    "message": "Controls whether the current mode survives a full Chrome restart."
+  },
+  "helpBadge": {
+    "message": "The badge is only a visual indicator in the toolbar."
+  },
+  "helpNativeReapply": {
+    "message": "Navigation can reset renderer state, so the extension can send the Native Blink command again after a completed navigation."
+  },
+  "helpLanguage": {
+    "message": "Automatic follows Chrome's UI language. English and Russian can be selected explicitly."
+  },
+  "offDescription": {
+    "message": "No focus spoofing"
+  },
+  "jsDescription": {
+    "message": "Page-level compatibility"
+  },
+  "nativeDescription": {
+    "message": "Blink-level emulation"
+  },
+  "allSupportedTabs": {
+    "message": "All supported tabs"
+  },
+  "statusLoading": {
+    "message": "Loading status…"
+  },
+  "loading": {
+    "message": "Loading…"
+  },
+  "benchmarkDesc": {
+    "message": "Run the built-in English benchmark to compare Normal, JS and Native behavior."
+  },
+  "extensionBehavior": {
+    "message": "Mode behavior"
+  },
+  "modeOffLine": {
+    "message": "Off → no injected script and no debugger attachment"
+  },
+  "modeJsLine": {
+    "message": "JS → compatibility script only"
+  },
+  "modeNativeLine": {
+    "message": "Native → Blink focus emulation only"
+  },
+  "versionLabel": {
+    "message": "Version $VERSION$",
+    "placeholders": {
+      "VERSION": {
+        "content": "$1",
+        "example": "3.0.0"
+      }
+    }
+  },
+  "settingsIntro": {
+    "message": "Configure how the extension starts and how mode changes are applied."
+  },
+  "debuggerPermission": {
+    "message": "Chrome debugger permission."
+  },
+  "offOption": {
+    "message": "Off"
+  },
+  "jsOption": {
+    "message": "JS Compatibility"
+  },
+  "nativeOption": {
+    "message": "Native Blink"
+  },
+  "helpLabel": {
+    "message": "Help"
+  },
+  "startupIntro": {
+    "message": "Configure how the extension starts and how mode changes are applied."
+  },
+  "nativeWarningText": {
+    "message": "Native mode uses Chrome's debugger API and requires the debugger permission. Chrome can display a debugger warning, and managed devices can restrict debugger attachment."
+  },
+  "autoNativeNewTabs": {
+    "message": "Auto-apply Native to new tabs"
+  },
+  "autoNativeNewTabsDesc": {
+    "message": "In Native mode, automatically attach focus emulation to newly created supported tabs."
+  }
+}

@@ -1,0 +1,305 @@
+{
+  "popupSubtitle": {
+    "message": "Управление эмуляцией фокуса"
+  },
+  "currentTab": {
+    "message": "Текущая вкладка"
+  },
+  "noActiveTab": {
+    "message": "Нет активной вкладки"
+  },
+  "globalMode": {
+    "message": "Глобальный режим"
+  },
+  "appliesSupportedTabs": {
+    "message": "Применяется к поддерживаемым вкладкам."
+  },
+  "off": {
+    "message": "Выкл."
+  },
+  "normalChrome": {
+    "message": "Обычный Chrome"
+  },
+  "jsModeShort": {
+    "message": "JS"
+  },
+  "jsCompatibility": {
+    "message": "Совместимость"
+  },
+  "nativeModeShort": {
+    "message": "Native"
+  },
+  "blinkCdp": {
+    "message": "Blink / CDP"
+  },
+  "normalFocusBehavior": {
+    "message": "Обычное поведение фокуса"
+  },
+  "jsRegisteredStatus": {
+    "message": "Скрипт JS-совместимости зарегистрирован"
+  },
+  "nativeAttachedStatus": {
+    "message": "$COUNT$ поддерживаемых вкладок подключено к Native Blink",
+    "placeholders": {
+      "COUNT": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "nativeWarning": {
+    "message": "Native использует API отладки Chrome. Браузер может показать предупреждение, а политики управляемого устройства могут запретить подключение."
+  },
+  "quickActions": {
+    "message": "Быстрые действия"
+  },
+  "nativeTabs": {
+    "message": "Native-вкладки"
+  },
+  "reapplyMode": {
+    "message": "Применить ещё раз"
+  },
+  "openBenchmark": {
+    "message": "Открыть бенчмарк"
+  },
+  "settings": {
+    "message": "Настройки"
+  },
+  "disableNow": {
+    "message": "Полностью отключить"
+  },
+  "jsFooter": {
+    "message": "Режим JS регистрирует проверенный скрипт совместимости только пока активен JS. В Native этот скрипт не внедряется."
+  },
+  "modeChanged": {
+    "message": "Режим: $MODE$",
+    "placeholders": {
+      "MODE": {
+        "content": "$1",
+        "example": "NATIVE"
+      }
+    }
+  },
+  "modeReapplied": {
+    "message": "Режим применён повторно"
+  },
+  "disabled": {
+    "message": "Отключено"
+  },
+  "failed": {
+    "message": "Ошибка"
+  },
+  "nativeConfirm": {
+    "message": "Native подключает API отладки Chrome к вкладкам браузера. Chrome может показать предупреждение отладчика. Продолжить?"
+  },
+  "failedReadState": {
+    "message": "Не удалось получить состояние расширения"
+  },
+  "nativeDebuggerWarningTitle": {
+    "message": "Native Blink"
+  },
+  "nativeDebuggerWarning": {
+    "message": "Native Blink использует API отладки Chrome и требует разрешение debugger. Пока вкладка подключена, браузер может показывать предупреждение."
+  },
+  "settingsTitle": {
+    "message": "Расширенные настройки"
+  },
+  "startupBehavior": {
+    "message": "Запуск и поведение"
+  },
+  "defaultStartupMode": {
+    "message": "Режим при запуске"
+  },
+  "defaultStartupModeDesc": {
+    "message": "Режим, который восстанавливается при запуске Chrome, если включено восстановление."
+  },
+  "autoApplyNewTabs": {
+    "message": "Автоприменение к новым вкладкам"
+  },
+  "autoApplyNewTabsDesc": {
+    "message": "Автоматически применяет активный режим к новым поддерживаемым вкладкам."
+  },
+  "reloadModeChange": {
+    "message": "Перезагружать вкладки при смене режима"
+  },
+  "reloadModeChangeDesc": {
+    "message": "Рекомендуется. Перезагрузка — надёжный способ убрать уже внедрённый JS-spoof перед переходом между режимами."
+  },
+  "restoreStartup": {
+    "message": "Восстанавливать выбранный режим при запуске"
+  },
+  "restoreStartupDesc": {
+    "message": "При отключении расширение после запуска Chrome начинает в режиме «Выкл.» ."
+  },
+  "showBadge": {
+    "message": "Показывать значок режима"
+  },
+  "showBadgeDesc": {
+    "message": "Показывает JS или N на иконке расширения, когда активен невыключенный режим."
+  },
+  "nativeSection": {
+    "message": "Native Blink"
+  },
+  "nativeSectionDesc": {
+    "message": "Использует chrome.debugger и Emulation.setFocusEmulationEnabled. Это меняет путь эмуляции фокуса Blink, а не заменяет JavaScript API страницы."
+  },
+  "nativeReapply": {
+    "message": "Повторно применять Native после навигации"
+  },
+  "nativeReapplyDesc": {
+    "message": "Повторно отправляет команду Blink после навигации или перезагрузки поддерживаемой вкладки."
+  },
+  "jsSection": {
+    "message": "JS Compatibility"
+  },
+  "jsSectionDesc": {
+    "message": "Использует проверенный page-level spoof. Он отделён от Native и никогда не регистрируется в режиме Native."
+  },
+  "diagnostics": {
+    "message": "Диагностика"
+  },
+  "currentMode": {
+    "message": "Текущий режим"
+  },
+  "defaultMode": {
+    "message": "Режим по умолчанию"
+  },
+  "jsScript": {
+    "message": "JS-скрипт зарегистрирован"
+  },
+  "nativeAttached": {
+    "message": "Подключено Native-вкладок"
+  },
+  "supportedTabs": {
+    "message": "Поддерживаемых вкладок"
+  },
+  "refreshDiagnostics": {
+    "message": "Обновить диагностику"
+  },
+  "resetSettings": {
+    "message": "Сбросить настройки"
+  },
+  "hostAccessNote": {
+    "message": "Для JS-режима нужен доступ к сайтам. Внутренние страницы Chrome, страницы расширений и DevTools намеренно исключены."
+  },
+  "confirmReset": {
+    "message": "Сбросить все настройки и отключить spoof?"
+  },
+  "failedSave": {
+    "message": "Не удалось сохранить настройку"
+  },
+  "failedReapply": {
+    "message": "Не удалось повторно применить режим"
+  },
+  "failedChangeMode": {
+    "message": "Не удалось сменить режим"
+  },
+  "language": {
+    "message": "Язык"
+  },
+  "languageAuto": {
+    "message": "Автоматически (язык Chrome)"
+  },
+  "languageEnglish": {
+    "message": "English"
+  },
+  "languageRussian": {
+    "message": "Русский"
+  },
+  "languageDesc": {
+    "message": "Язык popup и настроек. Остальные страницы расширения остаются на английском."
+  },
+  "helpDefaultMode": {
+    "message": "Этот режим выбирается автоматически при включённом восстановлении режима при запуске."
+  },
+  "helpNewTabs": {
+    "message": "В Native новые поддерживаемые вкладки подключаются автоматически. В JS режим работает через зарегистрированный content script."
+  },
+  "helpReload": {
+    "message": "При отключении прежний режим может остаться в уже открытой странице до ручной перезагрузки."
+  },
+  "helpRestore": {
+    "message": "Определяет, сохраняется ли текущий режим после полного перезапуска Chrome."
+  },
+  "helpBadge": {
+    "message": "Значок — только визуальный индикатор в панели инструментов."
+  },
+  "helpNativeReapply": {
+    "message": "Навигация может сбрасывать состояние renderer, поэтому после завершения навигации команда Native Blink отправляется ещё раз."
+  },
+  "helpLanguage": {
+    "message": "Автоматический режим следует языку интерфейса Chrome. Английский и русский можно выбрать явно."
+  },
+  "offDescription": {
+    "message": "Без подмены фокуса"
+  },
+  "jsDescription": {
+    "message": "Page-level совместимость"
+  },
+  "nativeDescription": {
+    "message": "Blink-level эмуляция"
+  },
+  "allSupportedTabs": {
+    "message": "Все поддерживаемые вкладки"
+  },
+  "statusLoading": {
+    "message": "Загрузка состояния…"
+  },
+  "loading": {
+    "message": "Загрузка…"
+  },
+  "benchmarkDesc": {
+    "message": "Запустить встроенный английский бенчмарк для сравнения Normal, JS и Native."
+  },
+  "extensionBehavior": {
+    "message": "Поведение режимов"
+  },
+  "modeOffLine": {
+    "message": "Off → без внедрённого скрипта и без debugger"
+  },
+  "modeJsLine": {
+    "message": "JS → только compatibility script"
+  },
+  "modeNativeLine": {
+    "message": "Native → только эмуляция фокуса Blink"
+  },
+  "versionLabel": {
+    "message": "Версия $VERSION$",
+    "placeholders": {
+      "VERSION": {
+        "content": "$1",
+        "example": "3.0.0"
+      }
+    }
+  },
+  "settingsIntro": {
+    "message": "Настройте запуск расширения и применение смены режима."
+  },
+  "debuggerPermission": {
+    "message": "Разрешение debugger Chrome."
+  },
+  "offOption": {
+    "message": "Выкл."
+  },
+  "jsOption": {
+    "message": "JS Compatibility"
+  },
+  "nativeOption": {
+    "message": "Native Blink"
+  },
+  "helpLabel": {
+    "message": "Справка"
+  },
+  "startupIntro": {
+    "message": "Настройте запуск расширения и применение смены режима."
+  },
+  "nativeWarningText": {
+    "message": "Native использует API отладки Chrome и требует разрешение debugger. Браузер может показать предупреждение, а политики управляемого устройства могут запретить подключение."
+  },
+  "autoNativeNewTabs": {
+    "message": "Автоприменение Native к новым вкладкам"
+  },
+  "autoNativeNewTabsDesc": {
+    "message": "В Native автоматически подключает эмуляцию фокуса к новым поддерживаемым вкладкам."
+  }
+}

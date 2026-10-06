@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chrome Window Spoof</title>
+<style>
+:root{color-scheme:dark;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;background:#0a0e14;color:#eef2f7}*{box-sizing:border-box}body{width:390px;margin:0;background:linear-gradient(180deg,#111721 0,#0b0f15 100%);color:#eef2f7}button{font:inherit}header{padding:16px 16px 13px;border-bottom:1px solid #202a36;display:flex;justify-content:space-between;align-items:center;gap:14px}.brand{display:flex;align-items:center;gap:11px}.logo{width:36px;height:36px;border-radius:11px;display:grid;place-items:center;background:#182232;border:1px solid #33435b;box-shadow:0 6px 18px #0004;font-size:11px;font-weight:850;letter-spacing:.03em}.brand h1{font-size:14px;line-height:1.2;margin:0}.brand p{font-size:11px;color:#7f8ca0;margin:4px 0 0}.pill{border:1px solid #344154;background:#151d28;color:#acb8c8;padding:4px 8px;border-radius:999px;font-size:10px;font-weight:700;letter-spacing:.06em}.wrap{padding:12px}.card{border:1px solid #253141;background:#121923;border-radius:13px;padding:12px;margin-bottom:10px;box-shadow:0 8px 24px #0002}.muted{color:#7e8b9e}.kicker{font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:#788699}.tab-title{font-size:13px;font-weight:680;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:4px}.tab-url{font-size:10px;color:#68778b;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:3px}.mode-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:10px}.mode{min-height:70px;padding:10px 7px;border:1px solid #334154;background:#161f2b;color:#dfe6ef;border-radius:10px;cursor:pointer;text-align:left;transition:.12s}.mode:hover{border-color:#526884;background:#1a2534}.mode.active{border-color:#6b8ee6;background:#202e46;box-shadow:0 0 0 1px #6b8ee644 inset}.mode strong{display:block;font-size:12px}.mode span{display:block;font-size:10px;color:#8593a6;margin-top:4px;line-height:1.25}.mode:disabled{opacity:.45;cursor:wait}.status-line{display:flex;align-items:center;gap:8px;margin-top:11px;font-size:11px;color:#b4bfcc}.dot{width:8px;height:8px;border-radius:50%;background:#566274;flex:0 0 auto}.dot.on{background:#77d69a}.dot.warn{background:#e5b85d}.notice{margin-top:10px;padding:10px 11px;border-radius:10px;border:1px solid #53421f;background:#211b10;color:#d8c794;font-size:10px;line-height:1.45}.actions{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:9px}.btn{border:1px solid #344154;background:#161f2b;color:#eaf0f7;border-radius:10px;padding:9px 10px;cursor:pointer;font-size:11px;font-weight:650}.btn:hover{background:#1d2836;border-color:#465973}.btn.primary{background:#202f4a;border-color:#5674b5}.btn.danger{background:#281518;border-color:#63323a}.btn:disabled{opacity:.45;cursor:wait}.footer{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:9px;line-height:1.35;color:#6d798b}.link{border:0;background:none;color:#8ea4cc;padding:0;cursor:pointer}.link:hover{text-decoration:underline}.toast{position:fixed;left:13px;right:13px;bottom:13px;padding:10px 11px;border:1px solid #3a4b62;background:#182230;border-radius:10px;font-size:10px;box-shadow:0 12px 30px #0006;display:none}.toast.show{display:block}
+</style>
+</head>
+<body>
+<header><div class="brand"><div class="logo">CWS</div><div><h1>Chrome Window Spoof</h1><p data-i18n="popupSubtitle">Focus emulation control</p></div></div><span id="modePill" class="pill">OFF</span></header>
+<div class="wrap">
+<section class="card"><div class="kicker" data-i18n="currentTab">Current tab</div><div id="tabTitle" class="tab-title">Loading…</div><div id="tabUrl" class="tab-url"></div></section>
+<section class="card">
+  <div style="display:flex;justify-content:space-between;gap:12px;align-items:end"><div><div class="kicker" data-i18n="globalMode">Global mode</div><div class="muted" style="font-size:10px;margin-top:3px" data-i18n="appliesSupportedTabs">Applies to supported tabs.</div></div><span id="scopePill" class="pill" data-i18n="allSupportedTabs">All supported tabs</span></div>
+  <div class="mode-grid">
+    <button class="mode" data-mode="off"><strong data-i18n="off">Off</strong><span data-i18n="offDescription">No focus spoofing</span></button>
+    <button class="mode" data-mode="js"><strong data-i18n="jsModeShort">JS</strong><span data-i18n="jsDescription">Page-level compatibility</span></button>
+    <button class="mode" data-mode="native"><strong data-i18n="nativeModeShort">Native</strong><span data-i18n="nativeDescription">Blink-level emulation</span></button>
+  </div>
+  <div class="status-line"><span id="dot" class="dot"></span><span id="statusText" data-i18n="statusLoading">Loading status…</span></div>
+  <div id="nativeNotice" class="notice" style="display:none"><span data-i18n="nativeWarning">Native mode uses Chrome's debugger API.</span></div>
+</section>
+<section class="card">
+  <div style="display:flex;justify-content:space-between;align-items:center;gap:12px"><div class="kicker" data-i18n="quickActions">Quick actions</div><span id="attached" class="pill">0</span></div>
+  <div class="actions"><button id="reapply" class="btn primary" data-i18n="reapplyMode">Re-apply mode</button><button id="settings" class="btn" data-i18n="settings">Settings</button><button id="offNow" class="btn danger" data-i18n="disableNow">Disable now</button></div>
+</section>
+<div class="footer"><span data-i18n="jsFooter">JS mode registers the tested compatibility script only while JS mode is active. Native mode never injects that script.</span></div>
+</div><div id="toast" class="toast"></div><script src="popup.js"></script>
+</body>
+</html>
