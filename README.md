@@ -18,3 +18,9 @@ Chrome extension for experimenting with focused-page behavior. It has three mutu
 Mode changes are global for supported tabs. Reload-on-change is enabled by default because unregistering a dynamic content script does not remove code already injected into a loaded document.
 
 Native Blink requires the `debugger` permission. Chrome may display a debugger warning while a tab is attached. Chrome internal pages, extension pages, DevTools and unsupported schemes are excluded from automatic attachment.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
+
+Made by NeAnimeForever.
